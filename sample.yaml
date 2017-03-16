@@ -1,10 +1,14 @@
 ---
 # This is a sample site configuration for crawler.
 
-# NOTE: In COMMENTS below, name surrounded by lt and gt means the field is variable, while the others are fixed value and should be NOT CHANGED.
+# NOTE: In COMMENTS below, name surrounded by lt and gt means the field is
+# variable, while the others are fixed value and should be NOT CHANGED.
 hzmangel.github.io: # Site name, variable
 
-  # links section, contains all link used below, `links` name is fixed, but the name inside links are variable. Each link item accept those type of configurations:
+  # links section, contains all link used below, `links` name is fixed, but the
+  # name inside links are variable. Each link item accept those type of
+  # configurations:
+  #
   # Type 1: simple URL
   # <name>: <url>
   #
@@ -28,10 +32,11 @@ hzmangel.github.io: # Site name, variable
       type: json
       url: blahblahblah
 
-  # functions section, contains all functions used in parser
-  # Sometime, content can't be extracted by cssselect or xpath simply, then the function is used to do some pre or post processing.
-  # Function should be put in a block and params will be passed by `params` dict object
-  # Function string will be executed by `exec` system call.
+  # functions section, contains all functions used in parser Sometime, content
+  # can't be extracted by cssselect or xpath simply, then the function is used
+  # to do some pre or post processing.  Function should be put in a block and
+  # params will be passed by `params` dict object Function string will be
+  # executed by `exec` system call.
   functions:
     correct_dt_str: |
       ''.join(params['dt_str'].rsplit(':', -1))
