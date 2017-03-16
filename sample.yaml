@@ -28,4 +28,12 @@ hzmangel.github.io: # Site name, variable
       type: json
       url: blahblahblah
 
+  # functions section, contains all functions used in parser
+  # Sometime, content can't be extracted by cssselect or xpath simply, then the function is used to do some pre or post processing.
+  # Function should be put in a block and params will be passed by `params` dict object
+  # Function string will be executed by `exec` system call.
+  functions:
+    correct_dt_str: |
+      ''.join(params['dt_str'].rsplit(':', -1))
+
 ...
