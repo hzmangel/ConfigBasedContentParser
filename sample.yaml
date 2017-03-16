@@ -1,0 +1,31 @@
+---
+# This is a sample site configuration for crawler.
+
+# NOTE: In COMMENTS below, name surrounded by lt and gt means the field is variable, while the others are fixed value and should be NOT CHANGED.
+hzmangel.github.io: # Site name, variable
+
+  # links section, contains all link used below, `links` name is fixed, but the name inside links are variable. Each link item accept those type of configurations:
+  # Type 1: simple URL
+  # <name>: <url>
+  #
+  # Type 2: full configuration
+  # NOTE: `url` and `template` can't shown in same link item
+  # <name>:
+  #    url: <url>
+  #    template: <url template (python string format syntax)>
+  #    type: html | xml | json
+  #
+  # New fields will be updated while implementation
+
+  links:  # Indicate links used in crawler
+    main: http://hzmangel.github.io
+    page:
+      template: http://hzmangel.github.io/page/{}
+    feed:
+      type: xml
+      url: blahblah
+    raw_data:
+      type: json
+      url: blahblahblah
+
+...
