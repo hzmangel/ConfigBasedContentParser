@@ -41,5 +41,10 @@ hzmangel.github.io: # Site name, variable
     correct_dt_str: |
       ''.join(params['dt_str'].rsplit(':', -1))
 
+  # Formatters section contains all formats used in returned data, will show
+  # detail usage in code
+  formatters:
+    dt_formatter: '%Y-%m-%d %H:%M:%S'
+
   components:
 ...
