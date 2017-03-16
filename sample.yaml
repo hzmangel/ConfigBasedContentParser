@@ -9,13 +9,13 @@ hzmangel.github.io: # Site name, variable
   # <name>: <url>
   #
   # Type 2: full configuration
-  # NOTE: `url` and `template` can't shown in same link item
+  # NOTE: `url` and `template` can't be shown in same link item
   # <name>:
   #    url: <url>
   #    template: <url template (python string format syntax)>
   #    type: html | xml | json
   #
-  # New fields will be updated while implementation
+  # More fields will be added during usage
 
   links:  # Indicate links used in crawler
     main: http://hzmangel.github.io
@@ -36,4 +36,5 @@ hzmangel.github.io: # Site name, variable
     correct_dt_str: |
       ''.join(params['dt_str'].rsplit(':', -1))
 
+  components:
 ...
