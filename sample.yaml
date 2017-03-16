@@ -46,5 +46,30 @@ hzmangel.github.io: # Site name, variable
   formatters:
     dt_formatter: '%Y-%m-%d %H:%M:%S'
 
+  # components section is main configuration for contents, for now only three
+  # types of components are supported, which are `multiple_page`, `list` and
+  # `detail`, and each component contains `meta` and `attrs` fields, here is a
+  # example with all fields:
+  #
+  # components:
+  #   multiple_page:
+  #     meta:
+  #       blocks:
+  #       data_type:
+  #     attrs:
+  #       <foo>:
+  #         link:
+  #         block:
+  #         cssselector:
+  #         xpath:
+  #         pre_function:
+  #           name:
+  #           params:
+  #         post_function:
+  #           name:
+  #           params:
+  #       <bar>:
+  #   list:
+  #   detail:
   components:
 ...
